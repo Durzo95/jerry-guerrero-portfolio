@@ -17,7 +17,12 @@ export default function Profile() {
       <div className="flex flex-row gap-4 justify-center mt-8">
         {/* Loop through socialMediaData */}
         {socialMediaData.map((socialMedia, i) => (
-          <SocialLink key={i} href={socialMedia.href} Icon={socialMedia.Icon} />
+          <SocialLink
+            key={i}
+            href={socialMedia.href}
+            Icon={socialMedia.Icon}
+            color={socialMedia.color}
+          />
         ))}
       </div>
     </div>
