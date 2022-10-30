@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <div className="flex flex-row gap-4 justify-center mt-8">
             <a
               href="https://www.linkedin.com/in/gerardo-guerrero2/"
-              className="bg-gray-700 rounded-md p-2"
+              className="bg-gray-700 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-gray-800"
             >
               <Image
                 src="/linkedin.svg"
@@ -34,13 +34,13 @@ const Home: NextPage = () => {
             </a>
             <a
               href="https://github.com/Durzo95"
-              className="bg-gray-700 rounded-md p-2"
+              className="bg-gray-700 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-gray-800"
             >
               <Image src="/github.svg" alt="Github" width={32} height={32} />
             </a>
             <a
               href="mailto: jerry.guerrero95@gmail.com"
-              className="bg-gray-700 rounded-md p-2"
+              className="bg-gray-700 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-gray-800"
             >
               <Image src="/email.svg" alt="Email" width={32} height={32} />
             </a>
