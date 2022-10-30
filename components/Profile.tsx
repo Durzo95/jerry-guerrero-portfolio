@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import ProfileSocialLink from "./ProfileSocialLink";
 import socialMediaData from "../data/socialMediaData";
-import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import ProfileDemoInfo from "./ProfileDemoInfo";
 
 export default function Profile() {
   return (
@@ -25,6 +24,8 @@ export default function Profile() {
           />
         ))}
       </div>
+      {/* The Profile demographic overview */}
+      <ProfileDemoInfo />
     </div>
   );
 }
