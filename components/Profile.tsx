@@ -15,12 +15,7 @@ export default function Profile() {
       </h2>
       {/* The social media links */}
       <div className="flex flex-row gap-4 justify-center mt-8">
-        {/* <a
-          href="https://www.linkedin.com/in/gerardo-guerrero2/"
-          className="bg-gray-700 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-gray-800"
-        >
-          <FaLinkedinIn size={32} style={{ color: "0077b5" }} />
-        </a> */}
+        {/* Loop through socialMediaData */}
         {socialMediaData.map((socialMedia, i) => (
           <SocialLink key={i} href={socialMedia.href} Icon={socialMedia.Icon} />
         ))}

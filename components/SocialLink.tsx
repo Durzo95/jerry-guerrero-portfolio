@@ -12,6 +12,8 @@ export default function SocialLink({ href, Icon }: SocialLinkProps) {
     <a
       href={href}
       className="bg-gray-700 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-gray-800"
-    ></a>
+    >
+      <Icon size={32} />
+    </a>
   );
 }
