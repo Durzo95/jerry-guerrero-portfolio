@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SocialLink from "./SocialLink";
+import ProfileSocialLink from "./ProfileSocialLink";
 import socialMediaData from "../data/socialMediaData";
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -17,7 +17,7 @@ export default function Profile() {
       <div className="flex flex-row gap-4 justify-center mt-8">
         {/* Loop through socialMediaData */}
         {socialMediaData.map((socialMedia, i) => (
-          <SocialLink
+          <ProfileSocialLink
             key={i}
             href={socialMedia.href}
             Icon={socialMedia.Icon}
