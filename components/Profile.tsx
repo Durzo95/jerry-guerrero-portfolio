@@ -1,7 +1,7 @@
 import React from "react";
 import ProfileSocialLink from "./ProfileSocialLink";
-import socialMediaData from "../data/socialMediaData";
 import ProfileDemoInfo from "./ProfileDemoInfo";
+import DownloadCV from "./DownloadCV";
 
 export default function Profile() {
   return (
@@ -16,6 +16,8 @@ export default function Profile() {
       <ProfileSocialLink />
       {/* The Profile demographic overview */}
       <ProfileDemoInfo />
+      {/* The download resume button */}
+      <DownloadCV />
     </div>
   );
 }
