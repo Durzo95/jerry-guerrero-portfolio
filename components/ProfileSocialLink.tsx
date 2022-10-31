@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import socialMediaData from "../data/socialMediaData";
 
 interface SocialLinkProps {
   href: string;
