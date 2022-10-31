@@ -4,10 +4,9 @@ import demoInfoData from "../data/demoInfoData";
 
 export default function ProfileDemoInfo() {
   return (
-    <div className="m-8 p-8 bg-gray-800 rounded-2xl">
+    <div className="m-8 p-8 bg-gray-800 rounded-2xl flex flex-col gap-4">
       {/* Loop through demoInfoData */}
-      {demoInfoData.map((demoInfo, i) => (
-        <div className="flex flex-row gap-2 mt-4" key={i}>
+          <div className="flex flex-row gap-2" key={i}>
           {/* The icon on the row */}
           <div className="flex-col">
             <div className="rounded-lg bg-gray-900 p-2">
