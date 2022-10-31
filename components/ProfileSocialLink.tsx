@@ -3,19 +3,18 @@ import Image from "next/image";
 import { IconType } from "react-icons";
 import socialMediaData from "../data/socialMediaData";
 
-interface SocialLinkProps {
-  href: string;
-  Icon: IconType;
-  color?: string;
-}
-
-export default function SocialLink({ href, Icon, color }: SocialLinkProps) {
+export default function SocialLink() {
   return (
-    <a
-      href={href}
-      className="bg-gray-800 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-blue-900"
-    >
-      <Icon size={32} style={{ color: color }} />
-    </a>
+    <div className="flex flex-row gap-4 justify-center mt-8">
+      {/* Loop through socialMediaData */}
+      {socialMediaData.map((socialMedia, i) => (
+        <a
+          href={socialMedia.href}
+          className="bg-gray-800 rounded-md p-2 transform transition duration-500 hover:scale-125 hover:bg-blue-900"
+        >
+          <socialMedia.Icon size={32} style={{ color: socialMedia.color }} />
+        </a>
+      ))}
+    </div>
   );
 }

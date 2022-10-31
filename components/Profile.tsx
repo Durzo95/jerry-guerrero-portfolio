@@ -13,17 +13,7 @@ export default function Profile() {
         Application Manager
       </h2>
       {/* The social media links */}
-      <div className="flex flex-row gap-4 justify-center mt-8">
-        {/* Loop through socialMediaData */}
-        {socialMediaData.map((socialMedia, i) => (
-          <ProfileSocialLink
-            key={i}
-            href={socialMedia.href}
-            Icon={socialMedia.Icon}
-            color={socialMedia.color}
-          />
-        ))}
-      </div>
+      <ProfileSocialLink />
       {/* The Profile demographic overview */}
       <ProfileDemoInfo />
     </div>
