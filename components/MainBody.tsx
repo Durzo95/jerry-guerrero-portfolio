@@ -22,10 +22,16 @@ export default function MainBody() {
           <div className="mt-4" /> {/* Line Break */}
           For soft skills, I have experience in managing our applications team
           through clear communication of our goals, processes, and training. We
-          have not only been able to meet our goals but also exceed them every
-          year.
+          have not only been able to meet our goals but exceed them every year.
         </div>
         <MainBodyTitle title="What I do" />
+        {/* A Two column flex */}
+        <div className="flex flex-row gap-8">
+          {/* Left column */}
+          <div className="w-1/2 text-white">Left</div>
+          {/* Right column */}
+          <div className="w-1/2 text-white">Right</div>
+        </div>
       </div>
     </>
   );
