@@ -12,7 +12,7 @@ const socialMediaData: Array<{ href: string; Icon: IconType; color: string }> =
       color: "0077b5",
     },
     {
-      href: "https://www.linkedin.com/in/gerardo-guerrero2/",
+      href: "https://github.com/Durzo95",
       Icon: FaGithub,
       color: "c6ced6",
     },
