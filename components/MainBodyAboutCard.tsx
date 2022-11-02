@@ -10,7 +10,7 @@ interface Props {
 
 export default function MainBodyAboutCard(prop: Props) {
   return (
-    <div className="w-1/2 border-2 border-gray-500 rounded-lg bg-gray-800 text-white p-6 flex gap-2">
+    <div className="w-1/2 rounded-lg bg-gray-800 p-6 flex gap-2">
       <div className="flex flex-col w-1/3 h-full">
         <prop.Icon size={56} className="align-top text-blue-600" />
       </div>
