@@ -6,7 +6,7 @@ export default function MainBody() {
       <div className="h-max w-2/3 bg-gray-900 rounded-2xl shadow-2xl py-8 px-6">
         {/* About Me Title */}
         <MainBodyTitle title="About Me" />
-        <div className="text-gray-400 mb-8">
+        <div className="text-gray-400 mb-8 text-lg">
           I am a Computer Science graduate working as the Data Applications
           Manager for IDEA Public Schools. Currently managing the Applications
           team to administrate 4 Student Information Systems (SIS) in 4
