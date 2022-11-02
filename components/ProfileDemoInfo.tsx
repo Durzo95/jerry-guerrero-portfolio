@@ -4,7 +4,7 @@ import demoInfoData from "../data/demoInfoData";
 
 export default function ProfileDemoInfo() {
   return (
-    <div className="m-8 p-8 bg-gray-800 rounded-2xl flex flex-col gap-4">
+    <div className="my-8 p-8 bg-gray-800 rounded-2xl flex flex-col gap-4">
       {/* Loop through demoInfoData */}
       {demoInfoData.map((demoInfo, i, arr) => (
         <>
