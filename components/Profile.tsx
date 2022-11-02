@@ -2,7 +2,7 @@ import React from "react";
 import ProfileTitle from "./ProfileTitle";
 import ProfileSocialLink from "./ProfileSocialLink";
 import ProfileDemoInfo from "./ProfileDemoInfo";
-import DownloadCV from "./DownloadCV";
+import ProfileDownloadCV from "./ProfileDownloadCV";
 
 export default function Profile() {
   return (
@@ -14,7 +14,7 @@ export default function Profile() {
       {/* The Profile demographic overview */}
       <ProfileDemoInfo />
       {/* The download resume button */}
-      <DownloadCV />
+      <ProfileDownloadCV />
     </div>
   );
 }
