@@ -9,7 +9,7 @@ export default function DownloadCV() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center transform transition duration-500 hover:scale-125 hover:bg-blue-500">
+        <button className="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center transform transition duration-500 hover:scale-105 hover:bg-blue-500">
           <MdDownload className="w-6 h-6 mr-2" />
           <span>Download Resume</span>
         </button>
