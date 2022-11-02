@@ -6,13 +6,14 @@ interface Props {
   Icon: IconType;
   title: string;
   description: string;
+  tailwindColor: string;
 }
 
 export default function MainBodyAboutCard(prop: Props) {
   return (
-    <div className="w-1/2 rounded-lg bg-gray-800 p-6 flex gap-4">
+    <div className="rounded-lg bg-gray-800 p-6 flex gap-4">
       <div className="flex flex-col">
-        <prop.Icon size={56} className="align-top text-blue-600" />
+        <prop.Icon size={56} className={`align-top ${prop.tailwindColor}`} />
       </div>
       <div className="flex flex-col">
         <div className="text-white text-2xl font-bold justify-start">
