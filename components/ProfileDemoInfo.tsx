@@ -1,33 +1,20 @@
 import React from "react";
 import { IoSchool } from "react-icons/io5";
 import demoInfoData from "../data/demoInfoData";
+import ProfileDemoInfoRow from "./ProfileDemoInfoRow";
 
 export default function ProfileDemoInfo() {
   return (
     <div className="my-8 p-8 bg-gray-800 rounded-2xl flex flex-col gap-4">
       {/* Loop through demoInfoData */}
       {demoInfoData.map((demoInfo, i, arr) => (
-        <>
-          <div className="flex flex-row gap-2" key={i}>
-            {/* The icon on the row */}
-            <div className="flex-col">
-              <div className="rounded-lg bg-gray-900 p-2">
-                <demoInfo.Icon size={32} />
-              </div>
-            </div>
-            {/* The text on the row */}
-            <div className="flex-col">
-              <div className="text-md text-gray-400 my-[-3px]">
-                {demoInfo.subText}
-              </div>
-              <div className="text-white text-md">{demoInfo.text}</div>
-            </div>
-          </div>
-          {/* Bottom border, only if not the last element*/}
-          {i + 1 !== arr.length && (
-            <div className="border-b border-gray-700 my-[-0.3rem]" />
-          )}
-        </>
+        <ProfileDemoInfoRow
+          key={i}
+          Icon={demoInfo.Icon}
+          subText={demoInfo.subText}
+          text={demoInfo.text}
+          lastRow={i === arr.length - 1}
+        />
       ))}
     </div>
   );
