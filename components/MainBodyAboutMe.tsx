@@ -11,7 +11,7 @@ export default function MainBodyAboutMe() {
         Manager for IDEA Public Schools in their Data Services department.
         Currently managing a team of an Application Admin, Data Analyst, and a
         Help Desk Clerk to administrate 4 Student Information Systems (SIS) in 4
-        different states with a grand total of over 9,000 school admins and
+        different states with a grand total of over 9,000 school staff users and
         80,000 students.
         <div className="mt-4" /> {/* Line Break */}
         My technical skills involve working with Python, SQL, and JavaScript.
