@@ -10,7 +10,7 @@ export default function Profile() {
     <div className="lg:w-1/3 lg:max-w-md min-w-max h-max p-8 bg-gray-900 rounded-2xl shadow-2xl text-white relative">
       {/* Profile image */}
       <ProfilePhoto />
-      <div className="mb-20" />
+      <div className="lg:mb-20 mb-8" />
       {/* Profile Title */}
       <ProfileTitle />
       {/* The social media links */}
