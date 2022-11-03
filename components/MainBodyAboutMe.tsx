@@ -16,10 +16,8 @@ export default function MainBodyAboutMe() {
         <div className="mt-4" /> {/* Line Break */}
         My technical skills involve working with Python, SQL, and JavaScript.
         With these tools I have solved and automated complex processes for the
-        organization. This includes the imports of student data from the student
-        registration platform to the SIS systems, the automation of our staff
-        accounts, and boundary checks to make sure we are only enrolling
-        students within our district boundary.
+        organization. This includes the imports of student, staff, and geo
+        boundary data.
         <div className="mt-4" /> {/* Line Break */}
         For soft skills, I have experience in managing our team through clear
         communication of our goals, processes, and training. We have not only
