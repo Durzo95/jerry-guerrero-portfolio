@@ -1,18 +1,29 @@
 // an object that holds the social media links
-import { MdComputer, MdEmail, MdLocationPin, MdSchool } from "react-icons/md";
+import {
+  MdComputer,
+  MdEmail,
+  MdLocationPin,
+  MdSchool,
+  MdPhone,
+} from "react-icons/md";
 import { IconType } from "react-icons";
 
 // the social media links
 const demoInfoData: Array<{ Icon: IconType; text: string; subText: string }> = [
   {
     Icon: MdComputer,
-    text: "Data Services - IDEA Public Schools",
+    text: "IDEA Public Schools",
     subText: "Current Employment",
   },
   {
     Icon: MdSchool,
-    text: "Computer Science, Bachelor 2020",
+    text: "Computer Science",
     subText: "Education",
+  },
+  {
+    Icon: MdPhone,
+    text: "(956) 240-5995",
+    subText: "Phone",
   },
   {
     Icon: MdEmail,
