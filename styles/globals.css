@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*  Makes the whole background html the right color, instead of only the scrollable area
+    Without this if the user scrolls past on mobile they would see white instead of the 
+    intended background color */
+html {
+  background-color: theme("colors.gray.800");
+}
