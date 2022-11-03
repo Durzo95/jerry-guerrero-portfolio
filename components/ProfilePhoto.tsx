@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProfilePhoto() {
   return (
-    <div className="flex justify-center lg:absolute lg:left-[50%] lg:transform lg:translate-x-[-50%] lg:mt-[-140px]">
+    <div className="flex justify-center mb-4">
       <Image
         src="/Headshot.png"
         alt="Jerry Guerrero"
