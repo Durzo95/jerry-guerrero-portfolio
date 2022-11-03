@@ -26,11 +26,6 @@ const demoInfoData: Array<{ Icon: IconType; text: string; subText: string }> = [
     subText: "Phone",
   },
   {
-    Icon: MdEmail,
-    text: "Jerry.Guerrero95@gmail.com",
-    subText: "Email",
-  },
-  {
     Icon: MdLocationPin,
     text: "McAllen, Texas",
     subText: "Location",
