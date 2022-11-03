@@ -6,7 +6,7 @@ import MainBody from "../components/MainBody";
 
 const Home: NextPage = () => {
   return (
-    <body className="min-h-screen bg-gray-800 py-32 px-10">
+    <body className="min-h-screen bg-gray-800 py-8 px-4 lg:py-32 lg:px-10">
       <Head>
         <title>Jerry Guerrero</title>
         <link rel="icon" href="/favicon.ico" />

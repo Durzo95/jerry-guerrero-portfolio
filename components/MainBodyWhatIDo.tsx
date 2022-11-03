@@ -11,7 +11,7 @@ export default function MainBodyWhatIDo() {
     <>
       <MainBodyTitle title="What I do" />
       {/* A Two column grid */}
-      <div className="grid lg:grid-cols-2 md:grids-cols-1 gap-8 px-4">
+      <div className="grid lg:grid-cols-2 grids-cols-1 lg:gap-8 gap-4 px-0 lg:px-4">
         {whatIDoData.map((data, i) => (
           <MainBodyAboutCard
             key={i}
