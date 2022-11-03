@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Holding all the content, set the flex row */}
-      <div className="flex flex-row gap-8">
+      <div className="flex lg:flex-row flex-col gap-8">
         {/* Left side of the page, the profile */}
         <Profile />
         {/* Right side of the page, the content */}

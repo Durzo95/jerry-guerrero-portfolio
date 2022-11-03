@@ -7,7 +7,7 @@ import ProfilePhoto from "./ProfilePhoto";
 
 export default function Profile() {
   return (
-    <div className="w-1/3 max-w-md h-max p-8 bg-gray-900 rounded-2xl shadow-2xl text-white relative">
+    <div className="lg:w-1/3 lg:max-w-md min-w-max h-max p-8 bg-gray-900 rounded-2xl shadow-2xl text-white relative">
       {/* Profile image */}
       <ProfilePhoto />
       <div className="mb-20" />
