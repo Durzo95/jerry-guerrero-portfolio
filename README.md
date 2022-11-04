@@ -1,27 +1,99 @@
-# Next.js + Tailwind CSS Example
+# Jerry's Portfolio Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+My personal portfolio website built with React, TypeScript, and NextJS. This was a good opportunity to showcase my work and qualifications while re-affirming my learning of these web dev technologies.
 
-## Deploy your own
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The purpose of this site was to solidy the learning of:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- [Tailwind](https://tailwindcss.com/) for the css utlity classes that allowed for rapid development
+- [TypeScript](https://www.typescriptlang.org/) to learn type safety in JavaScript
+- [CSS Flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
-## How to use
+## Table of Contents
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- [Cover Guesser](#cover-guesser)
+  - [Table of Contents](#table-of-contents)
+  - [Author](#author)
+  - [Demo](#demo)
+  - [Screenshot](#screenshot)
+  - [Tech Stack](#tech-stack)
+  - [Lessons Learned](#lessons-learned)
+    - [React](#react)
+    - [NextJS](#nextjs)
+    - [Bootstrap, HTML, CSS](#bootstrap--html--css)
+    - [Source Control](#source-control)
+  - [Getting Started](#getting-started)
+
+## Author
+
+[Gerardo Guerrero - LinkedIn](https://www.linkedin.com/in/gerardo-guerrero2/)
+
+## Homepage
+
+[Link to Application](https://www.jerryguerrero.com/)
+
+## Screenshot
+
+![Homepage](https://i.imgur.com/0B500Ko.png)
+
+## Tech Stack
+
+**Client:** [React](https://reactjs.org/)
+
+**Server:** [NextJS](https://nextjs.org/)
+
+**Languages:** [Javascript](https://www.javascript.com/), [TypeScript](https://www.typescriptlang.org/)
+
+## Lessons Learned
+
+### React
+
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Components and Props](https://reactjs.org/docs/components-and-props.html)
+
+### NextJS
+
+- [Server Side and Static Page Rendering](https://nextjs.org/docs/basic-features/data-fetching/overview)
+- [Layouts](https://nextjs.org/docs/basic-features/layouts)
+- [Deployment to Vercel](https://nextjs.org/docs/deployment)
+
+### Responsive Design
+
+- [Tailwind CSS utility classes](https://tailwindcss.com/docs/installation)
+- [CSS Flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+
+### Source Control
+
+- [Github CI/CD](https://resources.github.com/ci-cd/)
+- [Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
+## Run Locally
+
+Clone the repo
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/Durzo95/jerry-guerrero-portfolio.git
 ```
+
+Move to directory
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+cd jerry-guerrero-portfolio
 ```
+
+Install dependencies
 
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Then, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
