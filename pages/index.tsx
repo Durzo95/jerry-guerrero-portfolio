@@ -10,9 +10,9 @@ const Home: NextPage = () => {
         <title>Jerry Guerrero</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-full min-h-screen bg-gray-800 sm:py-8 sm:px-4 lg:py-32 lg:px-10">
+      <main className="lg:flex lg:justify-center h-full min-h-screen bg-gray-800 sm:py-8 sm:px-4 lg:py-32 lg:px-10">
         {/* Holding all the content, set the grid */}
-        <div className="grid grid-cols-12 sm:gap-8">
+        <div className="grid grid-cols-12 sm:gap-8 ">
           {/* Left side of the page, the profile */}
           <div className="col-span-12 lg:col-span-4">
             <Profile />
