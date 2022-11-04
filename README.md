@@ -13,18 +13,18 @@ The purpose of this site was to solidy the learning of:
 
 ## Table of Contents
 
-- [Cover Guesser](#cover-guesser)
+- [Jerry's Portfolio Website](#jerry-s-portfolio-website)
   - [Table of Contents](#table-of-contents)
   - [Author](#author)
-  - [Demo](#demo)
+  - [Homepage](#homepage)
   - [Screenshot](#screenshot)
   - [Tech Stack](#tech-stack)
   - [Lessons Learned](#lessons-learned)
     - [React](#react)
     - [NextJS](#nextjs)
-    - [Bootstrap, HTML, CSS](#bootstrap--html--css)
+    - [Responsive Design](#responsive-design)
     - [Source Control](#source-control)
-  - [Getting Started](#getting-started)
+  - [Run Locally](#run-locally)
 
 ## Author
 
