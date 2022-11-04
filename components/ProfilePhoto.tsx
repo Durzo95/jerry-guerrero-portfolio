@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProfilePhoto() {
   return (
-    <div className="flex justify-center mb-4">
+    <figure className="flex justify-center mb-4">
       <Image
         src="/Headshot.png"
         alt="Jerry Guerrero"
@@ -12,6 +12,6 @@ export default function ProfilePhoto() {
         placeholder="blur"
         blurDataURL="/Headshot.png"
       />
-    </div>
+    </figure>
   );
 }

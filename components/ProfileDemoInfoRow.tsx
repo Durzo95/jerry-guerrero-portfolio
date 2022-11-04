@@ -21,8 +21,8 @@ export default function ProfileDemoInfoRow(prop: Props) {
         </div>
         {/* The text on the row */}
         <div className="flex-col">
-          <div className="text-md text-gray-400 my-[-3px]">{prop.subText}</div>
-          <div className="text-white text-md">{prop.text}</div>
+          <h2 className="text-md text-gray-400 my-[-3px]">{prop.subText}</h2>
+          <h1 className="text-white text-md">{prop.text}</h1>
         </div>
       </div>
       {/* Bottom border, only if not the last element*/}
