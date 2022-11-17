@@ -27,4 +27,11 @@ const Home: NextPage = () => {
   );
 };
 
+// Makes it so the index page renders at build time, allowing it to cache in a CDN and be served faster
+export async function getStaticProps() {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
+
 export default Home;
