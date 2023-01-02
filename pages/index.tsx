@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Profile from "../components/Profile";
 import MainBody from "../components/MainBody";
+import Navigation from "../components/Navigation";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,9 @@ const Home: NextPage = () => {
           </div>
           {/* Right side of the page, the content */}
           <div className="col-span-12 lg:col-span-8">
+            {/* Navigation */}
+            <Navigation />
+            {/* Main Body */}
             <MainBody />
           </div>
         </div>
