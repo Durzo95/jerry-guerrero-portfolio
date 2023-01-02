@@ -4,7 +4,7 @@ import navigationLinks from "../data/navigationLinks";
 export default function Navigation() {
   return (
     <div className="h-max w-full bg-gray-900 sm:rounded-2xl shadow-2xl py-8 px-6 max-w-md mb-6">
-      <div className="flex flex-row gap-4 justify-center mt-8">
+      <div className="flex flex-row gap-4 justify-center">
         {/* Loop through socialMediaData */}
         {navigationLinks.map((navLink, i) => (
           <a
