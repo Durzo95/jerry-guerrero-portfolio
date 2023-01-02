@@ -1,11 +1,5 @@
 // an object that holds the social media links
-import {
-  MdComputer,
-  MdEmail,
-  MdLocationPin,
-  MdSchool,
-  MdPhone,
-} from "react-icons/md";
+import { MdComputer, MdLocationPin, MdSchool, MdPhone } from "react-icons/md";
 import { IconType } from "react-icons";
 
 // the social media links

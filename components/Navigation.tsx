@@ -4,7 +4,7 @@ import navigationLinks from "../data/navigationLinks";
 export default function Navigation() {
   return (
     <div className="h-max w-full bg-gray-900 sm:rounded-2xl shadow-2xl py-8 px-6 max-w-md mb-6">
-      <div className="flex flex-row gap-4 justify-center">
+      <div className="flex flex-row gap-4 justify-center text-gray-500">
         {/* Loop through socialMediaData */}
         {navigationLinks.map((navLink, i) => (
           <a
@@ -14,7 +14,7 @@ export default function Navigation() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <navLink.Icon key={i} size={32} style={{ color: "gray" }} />
+            <navLink.Icon key={i} size={32} style={{}} />
           </a>
         ))}
       </div>
