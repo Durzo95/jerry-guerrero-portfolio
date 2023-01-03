@@ -9,7 +9,7 @@ export default function NavigationLink() {
         <a
           key={i}
           // href={navLink.href}
-          className="bg-gray-800 rounded-2xl p-4 transform transition duration-500 hover:bg-blue-900 hover:cursor-pointer flex flex-col items-center"
+          className="bg-gray-800 rounded-2xl p-4 transform transition duration-500 hover:bg-blue-900 hover:cursor-pointer min-w-[7rem] flex flex-col items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
