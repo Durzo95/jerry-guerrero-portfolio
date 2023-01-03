@@ -9,12 +9,12 @@ export default function NavigationLink() {
         <a
           key={i}
           // href={navLink.href}
-          className="bg-gray-800 rounded-3xl p-4 transform transition duration-500 hover:bg-blue-900 hover:cursor-pointer flex flex-col items-center"
+          className="bg-gray-800 rounded-2xl p-4 transform transition duration-500 hover:bg-blue-900 hover:cursor-pointer flex flex-col items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
           <navLink.Icon key={i} size={48} />
-          <div>About Me</div>
+          <div className="py-2">{navLink.text}</div>
         </a>
       ))}
     </div>
