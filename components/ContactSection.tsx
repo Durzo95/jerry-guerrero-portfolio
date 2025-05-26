@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="mt-12">
+    <div id="contact">
       <MainBodyTitle title="Contact" />
       <div className="text-gray-400 text-lg">
         <p className="mt-4 mb-8">
@@ -84,6 +84,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 } 

@@ -17,7 +17,7 @@ export default function ProjectsSection() {
   }, [selectedCategory, selectedStatus]);
 
   return (
-    <section id="projects" className="mt-12">
+    <div id="projects">
       <MainBodyTitle title="Projects" />
       <div className="text-gray-400 text-lg">
         <p className="mt-4 mb-8">
@@ -81,6 +81,6 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 } 

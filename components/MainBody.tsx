@@ -6,19 +6,26 @@ import ContactSection from "./ContactSection";
 
 export default function MainBody() {
   return (
-    <main className="h-max w-full bg-gray-900 sm:rounded-2xl shadow-2xl py-8 px-6 max-w-4xl">
-      {/* About Me */}
-      <section id="about">
+    <div className="space-y-6 lg:space-y-8">
+      {/* About Me Section */}
+      <section id="about" className="bg-gray-900 rounded-2xl shadow-2xl py-6 px-6 lg:py-8 lg:px-8 border border-gray-700">
         <MainBodyAboutMe />
       </section>
-      {/* What I do */}
-      <section id="what-i-do">
+      
+      {/* What I do Section */}
+      <section id="what-i-do" className="bg-gray-900 rounded-2xl shadow-2xl py-6 px-6 lg:py-8 lg:px-8 border border-gray-700">
         <MainBodyWhatIDo />
       </section>
-      {/* Projects */}
-      <ProjectsSection />
-      {/* Contact */}
-      <ContactSection />
-    </main>
+      
+      {/* Projects Section */}
+      <section className="bg-gray-900 rounded-2xl shadow-2xl py-6 px-6 lg:py-8 lg:px-8 border border-gray-700">
+        <ProjectsSection />
+      </section>
+      
+      {/* Contact Section */}
+      <section className="bg-gray-900 rounded-2xl shadow-2xl py-6 px-6 lg:py-8 lg:px-8 border border-gray-700">
+        <ContactSection />
+      </section>
+    </div>
   );
 }

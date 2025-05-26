@@ -12,18 +12,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <main className="lg:flex lg:justify-center h-full min-h-screen bg-gray-800 sm:py-8 sm:px-4 lg:py-32 lg:px-10 pt-16">
-        {/* Holding all the content, set the grid */}
-        <div className="grid grid-cols-12 sm:gap-8 ">
-          {/* Left side of the page, the profile */}
-          <div className="col-span-12 lg:col-span-4">
-            <Profile />
+      <main className="min-h-screen bg-gray-800 pt-16">
+        {/* Hero Section with Profile */}
+        <section className="lg:flex lg:justify-center py-4 px-4 lg:py-8 lg:px-10">
+          <div className="max-w-7xl w-full">
+            <div className="grid grid-cols-12 gap-4 lg:gap-8">
+              {/* Left side - Profile (Sticky on desktop) */}
+              <div className="col-span-12 lg:col-span-4 xl:col-span-3">
+                <div className="lg:sticky lg:top-24">
+                  <Profile />
+                </div>
+              </div>
+              {/* Right side - Main Content */}
+              <div className="col-span-12 lg:col-span-8 xl:col-span-9">
+                <MainBody />
+              </div>
+            </div>
           </div>
-          {/* Right side of the page, the content */}
-          <div className="col-span-12 lg:col-span-8">
-            <MainBody />
-          </div>
-        </div>
+        </section>
       </main>
     </>
   );

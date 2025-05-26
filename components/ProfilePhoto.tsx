@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function ProfilePhoto() {
   return (
-    <figure className="flex justify-center mb-4">
+    <figure className="flex justify-center mb-6">
       <Image
         src="/Headshot.png"
         alt="Jerry Guerrero"
-        width={300}
-        height={300}
+        width={200}
+        height={200}
         className="bg-blue-800 rounded-2xl shadow-2xl"
         placeholder="blur"
         blurDataURL="/Headshot.png"
