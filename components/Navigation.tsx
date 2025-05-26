@@ -54,7 +54,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("about")}
               className="text-white text-xl font-bold hover:text-blue-400 transition-colors"
             >
-              Jerry Guerrero
+              Gerardo Guerrero
             </button>
           </div>
 

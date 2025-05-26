@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jerry Guerrero</title>
+        <title>Gerardo Guerrero</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
