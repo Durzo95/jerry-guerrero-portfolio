@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Profile from "../components/Profile";
 import MainBody from "../components/MainBody";
+import Navigation from "../components/Navigation";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,8 @@ const Home: NextPage = () => {
         <title>Jerry Guerrero</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="lg:flex lg:justify-center h-full min-h-screen bg-gray-800 sm:py-8 sm:px-4 lg:py-32 lg:px-10">
+      <Navigation />
+      <main className="lg:flex lg:justify-center h-full min-h-screen bg-gray-800 sm:py-8 sm:px-4 lg:py-32 lg:px-10 pt-16">
         {/* Holding all the content, set the grid */}
         <div className="grid grid-cols-12 sm:gap-8 ">
           {/* Left side of the page, the profile */}
