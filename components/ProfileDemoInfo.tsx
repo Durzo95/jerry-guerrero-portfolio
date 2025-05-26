@@ -5,17 +5,20 @@ import ProfileDemoInfoRow from "./ProfileDemoInfoRow";
 
 export default function ProfileDemoInfo() {
   return (
-    <div className="my-8 p-8 bg-gray-800 rounded-2xl flex flex-col gap-4">
-      {/* Loop through demoInfoData */}
-      {demoInfoData.map((demoInfo, i, arr) => (
-        <ProfileDemoInfoRow
-          key={i}
-          Icon={demoInfo.Icon}
-          subText={demoInfo.subText}
-          text={demoInfo.text}
-          lastRow={i === arr.length - 1}
-        />
-      ))}
+    <div className="mt-6 mb-6">
+      <h3 className="text-white text-sm font-semibold mb-3 text-center">Professional Details</h3>
+      <div className="bg-gray-800 rounded-xl p-4 space-y-3">
+        {/* Loop through demoInfoData */}
+        {demoInfoData.map((demoInfo, i, arr) => (
+          <ProfileDemoInfoRow
+            key={i}
+            Icon={demoInfo.Icon}
+            subText={demoInfo.subText}
+            text={demoInfo.text}
+            lastRow={i === arr.length - 1}
+          />
+        ))}
+      </div>
     </div>
   );
 }

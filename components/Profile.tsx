@@ -1,10 +1,11 @@
 import React from "react";
 import ProfileTitle from "./ProfileTitle";
+import ProfileSummary from "./ProfileSummary";
+import ProfileSkills from "./ProfileSkills";
 import ProfileSocialLink from "./ProfileSocialLink";
 import ProfileDemoInfo from "./ProfileDemoInfo";
 import ProfileDownloadCV from "./ProfileDownloadCV";
 import ProfilePhoto from "./ProfilePhoto";
-import ProfileQuickNav from "./ProfileQuickNav";
 
 export default function Profile() {
   return (
@@ -13,10 +14,12 @@ export default function Profile() {
       <ProfilePhoto />
       {/* Profile Title */}
       <ProfileTitle />
+      {/* Professional Summary */}
+      <ProfileSummary />
+      {/* Core Skills */}
+      <ProfileSkills />
       {/* The social media links */}
       <ProfileSocialLink />
-      {/* Quick Navigation */}
-      <ProfileQuickNav />
       {/* The Profile demographic overview */}
       <ProfileDemoInfo />
       {/* The download resume button */}
