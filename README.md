@@ -4,9 +4,9 @@ My personal portfolio website built with React, TypeScript, and NextJS. This was
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-The purpose of this site was to solidy the learning of:
+The purpose of this site was to solidify the learning of:
 
-- [Tailwind](https://tailwindcss.com/) for the css utlity classes that allowed for rapid development
+- [Tailwind](https://tailwindcss.com/) for the css utility classes that allowed for rapid development
 - [TypeScript](https://www.typescriptlang.org/) to learn type safety in JavaScript
 - [CSS Flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
 - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)

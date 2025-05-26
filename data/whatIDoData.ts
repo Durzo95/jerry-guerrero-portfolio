@@ -23,7 +23,7 @@ const whatIDoData: Array<{
   {
     Icon: AiFillCode,
     title: "Automations",
-    description: "Solving complex and citical processes with code",
+    description: "Solving complex and critical processes with code",
     tailwindColor: "text-green-600",
   },
   {
