@@ -10,7 +10,13 @@ module.exports = {
     }
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: {
+          750: '#374151',
+        }
+      }
+    },
   },
   plugins: [],
 }
