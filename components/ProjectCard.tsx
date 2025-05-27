@@ -62,7 +62,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Description */}
       <p className="text-gray-400 mb-4 leading-relaxed">
-        {isExpanded ? project.longDescription : project.description}
+        {project.description}
       </p>
 
       {/* Technologies */}
