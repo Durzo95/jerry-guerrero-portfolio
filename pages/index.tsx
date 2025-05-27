@@ -18,13 +18,13 @@ const Home: NextPage = () => {
           <div className="max-w-7xl w-full">
             <div className="grid grid-cols-12 gap-4 lg:gap-8">
               {/* Left side - Profile (Sticky on desktop) */}
-              <div className="col-span-12 lg:col-span-4 xl:col-span-3">
+              <div className="col-span-12 lg:col-span-4 xl:col-span-4">
                 <div className="lg:sticky lg:top-24">
                   <Profile />
                 </div>
               </div>
               {/* Right side - Main Content */}
-              <div className="col-span-12 lg:col-span-8 xl:col-span-9">
+              <div className="col-span-12 lg:col-span-8 xl:col-span-8">
                 <MainBody />
               </div>
             </div>

@@ -50,31 +50,7 @@ export default function ProjectsSection() {
           )}
         </div>
 
-        {/* Project Stats */}
-        <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-white">{projectsData.length}</div>
-            <div className="text-gray-400 text-sm">Total Projects</div>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-blue-400">
-              {projectsData.filter(p => p.category === "automation").length}
-            </div>
-            <div className="text-gray-400 text-sm">Automation</div>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-cyan-400">
-              {projectsData.filter(p => p.category === "web-development").length}
-            </div>
-            <div className="text-gray-400 text-sm">Web Development</div>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-purple-400">
-              {projectsData.filter(p => p.category === "management").length}
-            </div>
-            <div className="text-gray-400 text-sm">Management</div>
-          </div>
-        </div>
+
       </div>
     </div>
   );
