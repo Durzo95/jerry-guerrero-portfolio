@@ -224,26 +224,6 @@ const projectsData: Project[] = [
     category: "automation"
   },
   {
-    id: "covid-response-system",
-    title: "COVID-19 Remote Learning Infrastructure",
-    description: "Critical team member in taking the district fully online during COVID in four weeks, implementing automated processes and system scaling for 80,000+ students and 9,000+ staff.",
-    technologies: [
-      { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "System Administration", icon: FaServer, color: "text-blue-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
-      { name: "Microsoft Teams", icon: SiMicrosoftteams, color: "text-purple-500" }
-    ],
-    features: [
-      "Complete district transition to online learning in 4 weeks",
-      "Infrastructure scaling for 89,000+ users",
-      "Automated attendance processes using Microsoft Teams data",
-      "System performance monitoring and optimization",
-      "Technical support for largest remote learning deployment in organization history",
-      "Successful implementation during critical pandemic response"
-    ],
-    category: "management"
-  },
-  {
     id: "covid-attendance-dashboard",
     title: "COVID-19 Onsite vs Online Attendance Dashboard",
     description: "Critical analytics dashboard tracking student attendance patterns during COVID-19 pandemic, comparing onsite vs online learning effectiveness across 80,000+ students for district leadership decision-making.",
