@@ -18,10 +18,6 @@ export default function ProjectsSection() {
     <div id="projects">
       <MainBodyTitle title="Projects" />
       <div className="text-gray-400 text-lg">
-        <p className="mt-4 mb-8">
-          Here are some of the key projects I've worked on, showcasing my technical skills 
-          and problem-solving abilities across automation, web development, data analysis, and team management.
-        </p>
         
         {/* Project Filters */}
         <ProjectFilter

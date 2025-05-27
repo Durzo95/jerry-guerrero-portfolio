@@ -14,6 +14,7 @@ export default function ProjectFilter({
     { value: "automation", label: "Automation" },
     { value: "web-development", label: "Web Development" },
     { value: "management", label: "Management" },
+    { value: "analytics", label: "Analytics" },
   ];
 
   return (
