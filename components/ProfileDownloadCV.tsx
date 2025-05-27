@@ -4,7 +4,7 @@ export default function DownloadCV() {
   return (
     <div className="mt-6">
       <a
-        href="https://drive.google.com/file/d/1WFWc1VWiRnBJo3a_qeW8HO-z7Bk4Y1OB/view?usp=share_link"
+        href="https://drive.google.com/file/d/1pfefcG84JXR-fXKcaQ8kk_1JZq6u_hGK/view?usp=sharing"
         download={"Gerardo Guerrero Resume.pdf"}
         target="_blank"
         rel="noopener noreferrer"
