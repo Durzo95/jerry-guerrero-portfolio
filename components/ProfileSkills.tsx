@@ -1,10 +1,10 @@
 import React from "react";
-import { FaPython, FaJs, FaDatabase, FaGraduationCap } from "react-icons/fa";
+import { FaJs, FaDatabase, FaGraduationCap } from "react-icons/fa";
 import { SiPowerbi, SiMicrosoftexcel, SiPython } from "react-icons/si";
 
 export default function ProfileSkills() {
-  const skills = [
-    { name: "Python", icon: SiPython, color: "text-yellow-400" },
+      const skills = [
+      { name: "Python", icon: SiPython, color: "text-yellow-400" },
     { name: "SQL", icon: FaDatabase, color: "text-blue-500" },
     { name: "Power BI", icon: SiPowerbi, color: "text-yellow-500" },
     { name: "Excel", icon: SiMicrosoftexcel, color: "text-green-600" },
