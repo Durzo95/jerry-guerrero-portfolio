@@ -15,9 +15,12 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
+      const navHeight = 64; // Height of the navigation bar (h-16 = 64px)
+      const elementPosition = element.offsetTop - navHeight - 20; // Extra 20px padding
+      
+      window.scrollTo({
+        top: elementPosition,
         behavior: "smooth",
-        block: "start",
       });
     }
     setIsOpen(false);
@@ -27,7 +30,19 @@ const Navigation = () => {
     const handleScroll = () => {
       const sections = navItems.map(item => item.id);
       const scrollPosition = window.scrollY + 100;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
+      // Check if we're near the bottom of the page
+      const isNearBottom = scrollPosition + windowHeight >= documentHeight - 100;
+
+      // If near bottom, set contact as active
+      if (isNearBottom) {
+        setActiveSection("contact");
+        return;
+      }
+
+      // Otherwise, use normal detection
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
