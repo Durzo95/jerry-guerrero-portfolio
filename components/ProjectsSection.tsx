@@ -6,15 +6,13 @@ import projectsData from "../data/projectsData";
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedStatus, setSelectedStatus] = useState("all");
 
   const filteredProjects = useMemo(() => {
     return projectsData.filter((project) => {
       const categoryMatch = selectedCategory === "all" || project.category === selectedCategory;
-      const statusMatch = selectedStatus === "all" || project.status === selectedStatus;
-      return categoryMatch && statusMatch;
+      return categoryMatch;
     });
-  }, [selectedCategory, selectedStatus]);
+  }, [selectedCategory]);
 
   return (
     <div id="projects">
@@ -28,9 +26,7 @@ export default function ProjectsSection() {
         {/* Project Filters */}
         <ProjectFilter
           selectedCategory={selectedCategory}
-          selectedStatus={selectedStatus}
           onCategoryChange={setSelectedCategory}
-          onStatusChange={setSelectedStatus}
         />
 
         {/* Projects Grid */}
@@ -45,7 +41,6 @@ export default function ProjectsSection() {
               <button
                 onClick={() => {
                   setSelectedCategory("all");
-                  setSelectedStatus("all");
                 }}
                 className="mt-4 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition-colors"
               >
@@ -62,22 +57,22 @@ export default function ProjectsSection() {
             <div className="text-gray-400 text-sm">Total Projects</div>
           </div>
           <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-green-400">
-              {projectsData.filter(p => p.status === "completed").length}
-            </div>
-            <div className="text-gray-400 text-sm">Completed</div>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <div className="text-2xl font-bold text-yellow-400">
-              {projectsData.filter(p => p.status === "in-progress").length}
-            </div>
-            <div className="text-gray-400 text-sm">In Progress</div>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
             <div className="text-2xl font-bold text-blue-400">
               {projectsData.filter(p => p.category === "automation").length}
             </div>
             <div className="text-gray-400 text-sm">Automation</div>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg text-center">
+            <div className="text-2xl font-bold text-cyan-400">
+              {projectsData.filter(p => p.category === "web-development").length}
+            </div>
+            <div className="text-gray-400 text-sm">Web Development</div>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg text-center">
+            <div className="text-2xl font-bold text-purple-400">
+              {projectsData.filter(p => p.category === "management").length}
+            </div>
+            <div className="text-gray-400 text-sm">Management</div>
           </div>
         </div>
       </div>

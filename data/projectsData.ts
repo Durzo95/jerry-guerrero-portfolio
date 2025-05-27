@@ -34,8 +34,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   imageUrl?: string;
-  status: "completed" | "in-progress" | "planned";
-  category: "automation" | "web-development" | "data-analysis" | "management";
+  category: "automation" | "web-development" | "management";
 }
 
 const projectsData: Project[] = [
@@ -59,7 +58,6 @@ const projectsData: Project[] = [
       "Compliance validation and audit trail generation",
       "Reduced manual provisioning time from weeks to hours"
     ],
-    status: "completed",
     category: "automation"
   },
   {
@@ -82,7 +80,6 @@ const projectsData: Project[] = [
       "Compliance risk elimination and audit reporting",
       "Safeguards district rating through accurate assignments"
     ],
-    status: "completed",
     category: "automation"
   },
   {
@@ -105,7 +102,6 @@ const projectsData: Project[] = [
       "Training and documentation for remote learning tools",
       "Successfully completed transition in 4 weeks"
     ],
-    status: "completed",
     category: "management"
   },
   {
@@ -128,7 +124,6 @@ const projectsData: Project[] = [
       "Team training and knowledge management",
       "Escalation procedures and quality assurance"
     ],
-    status: "completed",
     category: "management"
   },
   {
@@ -152,7 +147,6 @@ const projectsData: Project[] = [
     ],
     githubUrl: "https://github.com/Durzo95/jerry-guerrero-portfolio",
     liveUrl: "https://www.jerryguerrero.com/",
-    status: "completed",
     category: "web-development"
   }
 ];
