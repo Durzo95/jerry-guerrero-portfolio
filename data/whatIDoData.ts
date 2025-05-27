@@ -1,6 +1,6 @@
 // an object that holds the social media links
 import { MdSettings } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaCogs } from "react-icons/fa";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { VscDebugConsole } from "react-icons/vsc";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -27,15 +27,15 @@ const whatIDoData: Array<{
     tailwindColor: "text-green-600",
   },
   {
-    Icon: FaCode,
-    title: "Web Development",
-    description: "Learning new technologies and frameworks",
-    tailwindColor: "text-pink-600",
+    Icon: FaCogs,
+    title: "Custom Tech Solutions",
+    description: "Building tailored plugins and integrations that replace expensive licensed tools",
+    tailwindColor: "text-orange-500",
   },
   {
     Icon: BsFillPersonFill,
     title: "Management",
-    description: "Leading App Administrator and Data Analysts",
+    description: "Leading teams of App Administrators and Analysts",
     tailwindColor: "text-indigo-600",
   },
 ];
