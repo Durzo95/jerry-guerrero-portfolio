@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
         {/* Projects Grid */}
         <div 
-          className="grid lg:grid-cols-1 grid-cols-1 gap-6"
+          className="grid lg:grid-cols-2 grid-cols-1 gap-6"
           role="list"
           aria-label="Portfolio projects"
         >
