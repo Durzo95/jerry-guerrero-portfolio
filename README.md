@@ -1,4 +1,4 @@
-# Jerry's Portfolio Website
+# Gerardo's Portfolio Website
 
 My personal portfolio website built with React, TypeScript, and NextJS. This was a good opportunity to showcase my work and qualifications while re-affirming my learning of these web dev technologies.
 
@@ -13,7 +13,7 @@ The purpose of this site was to solidify the learning of:
 
 ## Table of Contents
 
-- [Jerry's Portfolio Website](#jerry-s-portfolio-website)
+- [Gerardo's Portfolio Website](#jerry-s-portfolio-website)
   - [Table of Contents](#table-of-contents)
   - [Author](#author)
   - [Homepage](#homepage)
@@ -25,10 +25,14 @@ The purpose of this site was to solidify the learning of:
     - [Responsive Design](#responsive-design)
     - [Source Control](#source-control)
   - [Run Locally](#run-locally)
+  - [Project Structure](#project-structure)
 
 ## Author
 
-[Gerardo Guerrero - LinkedIn](https://www.linkedin.com/in/gerardo-guerrero2/)
+**Gerardo Guerrero** - Data Applications Manager  
+[LinkedIn](https://www.linkedin.com/in/gerardo-guerrero2/) | [GitHub](https://github.com/Durzo95)
+
+Leading enterprise-scale educational technology operations across Texas, Florida, and Ohio, managing four Student Information Systems and delivering automation solutions that save thousands of hours annually.
 
 ## Homepage
 
@@ -97,3 +101,38 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
+
+```
+jerry-guerrero-portfolio/
+├── components/           # React components
+│   ├── Navigation.tsx   # Main navigation with scroll detection
+│   ├── Profile.tsx      # Professional profile sidebar
+│   ├── MainBody.tsx     # Main content sections
+│   ├── ProjectCard.tsx  # Individual project showcases
+│   ├── ProjectFilter.tsx # Project category filtering
+│   ├── ContactSection.tsx # Contact information
+│   └── ...
+├── data/                # TypeScript data files
+│   ├── projectsData.ts  # Project information and metadata
+│   ├── whatIDoData.ts   # Professional expertise areas
+│   ├── socialMediaData.ts # Social media links
+│   └── demoInfoData.ts  # Professional overview data
+├── pages/               # Next.js pages
+│   ├── index.tsx        # Homepage
+│   └── _app.tsx         # App wrapper component
+├── public/              # Static assets
+│   ├── Headshot.png     # Headshot
+│   ├── preview.png      # Portfolio preview image
+│   └── favicon.ico      # Site favicon
+├── styles/              # Global styles and Tailwind config
+│   └── globals.css      # Global CSS with Tailwind imports
+├── .gitignore           # Git ignore rules
+├── next.config.js       # Next.js configuration
+├── package.json         # Dependencies and scripts
+├── postcss.config.js    # PostCSS configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── tsconfig.json        # TypeScript configuration
+└── README.md            # Project documentation
+```
