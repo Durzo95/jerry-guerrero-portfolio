@@ -7,7 +7,8 @@ import {
   FaServer,
   FaChartLine,
   FaMapMarkedAlt,
-  FaFileAlt 
+  FaFileAlt,
+  FaCloud 
 } from "react-icons/fa";
 import { 
   SiTypescript, 
@@ -18,6 +19,7 @@ import {
   SiOracle,
   SiMicrosoftteams
 } from "react-icons/si";
+import { MdVpnKey } from "react-icons/md";
 
 export interface Project {
   id: string;
@@ -144,48 +146,6 @@ const projectsData: Project[] = [
     category: "automation"
   },
   {
-    id: "covid-attendance-automation",
-    title: "COVID-19 Automated Attendance System",
-    description: "Python automation using Microsoft Teams data to automatically mark student attendance during COVID, eliminating the need for teachers to manually take attendance and providing campus reporting capabilities.",
-    longDescription: "Created and implemented an automated process using Python that allowed teachers to not have to worry about taking attendance during COVID years. The process used data from Microsoft Teams to identify students who were in attendance and marked them present for the appropriate class. Additionally, the automation had reporting built in to allow campuses to identify when students were showing up to class online. This automation was later used after COVID years for Virtual School in the 21-22 school year.",
-    technologies: [
-      { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "Microsoft Teams API", icon: SiMicrosoftteams, color: "text-purple-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
-      { name: "Reporting", icon: FaChartLine, color: "text-blue-600" }
-    ],
-    features: [
-      "Automated attendance marking using Microsoft Teams data",
-      "Eliminated manual attendance taking for teachers during COVID",
-      "Identified students in attendance and marked them present automatically",
-      "Built-in reporting for campuses to track online class attendance",
-      "Extended use for Virtual School in 21-22 school year",
-      "Streamlined remote learning attendance processes"
-    ],
-    category: "automation"
-  },
-  {
-    id: "covid-response-system",
-    title: "COVID-19 Remote Learning Infrastructure",
-    description: "Critical team member in taking the district fully online during COVID in four weeks, implementing automated processes and system scaling for 80,000+ students and 9,000+ staff.",
-    longDescription: "Was a critical member of the team that took the district fully online during COVID in four weeks. Helped architect and implement the complete digital transformation that took IDEA Public Schools fully online during the COVID-19 pandemic. Managed system scaling, user provisioning, and technical support for the largest remote learning deployment in the organization's history.",
-    technologies: [
-      { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "System Administration", icon: FaServer, color: "text-blue-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
-      { name: "Microsoft Teams", icon: SiMicrosoftteams, color: "text-purple-500" }
-    ],
-    features: [
-      "Complete district transition to online learning in 4 weeks",
-      "Infrastructure scaling for 89,000+ users",
-      "Automated attendance processes using Microsoft Teams data",
-      "System performance monitoring and optimization",
-      "Technical support for largest remote learning deployment in organization history",
-      "Successful implementation during critical pandemic response"
-    ],
-    category: "management"
-  },
-  {
     id: "family-engagement-automation",
     title: "Family Engagement & Withdrawal Packet Automation",
     description: "Automated processes for Family Engagement and auto-generating withdrawal packets to eliminate manual steps and improve operational efficiency.",
@@ -226,6 +186,71 @@ const projectsData: Project[] = [
       "Change management strategies to minimize operational disruption",
       "User training coordination and support during transition",
       "Successful implementation of major SIS UI overhaul"
+    ],
+    category: "management"
+  },
+  {
+    id: "powerschool-cloud-migration",
+    title: "PowerSchool Cloud Migration Project",
+    description: "Leading the systems migration of PowerSchool SIS from on-premise to cloud infrastructure, managing communication, project coordination, and ensuring secure IT connectivity through VPN implementation.",
+    longDescription: "Currently managing the comprehensive migration of our PowerSchool SIS from on-premise infrastructure to cloud-based hosting. This critical project involves coordinating with multiple stakeholders, managing communication across all departments, and ensuring seamless transition with minimal downtime. Key responsibilities include project management coordination, stakeholder communication, and working closely with our IT team to establish secure VPN connectivity to the new cloud environment. The migration requires careful planning to maintain data integrity, system performance, and user access throughout the transition process.",
+    technologies: [
+      { name: "Cloud Infrastructure", icon: FaCloud, color: "text-cyan-400" },
+      { name: "PowerSchool SIS", icon: FaDatabase, color: "text-green-600" },
+      { name: "VPN Configuration", icon: MdVpnKey, color: "text-red-500" },
+      { name: "Project Management", icon: FaChartLine, color: "text-purple-500" }
+    ],
+    features: [
+      "Migration from on-premise to cloud infrastructure",
+      "Cross-departmental communication and stakeholder management",
+      "Project coordination and timeline management",
+      "VPN connectivity setup for secure IT team access",
+      "Data integrity and system performance monitoring",
+      "Minimal downtime transition planning",
+      "User access continuity during migration",
+      "Stress testing and validation of new system"
+    ],
+    category: "management"
+  },
+  {
+    id: "covid-attendance-automation",
+    title: "COVID-19 Automated Attendance System",
+    description: "Python automation using Microsoft Teams data to automatically mark student attendance during COVID, eliminating the need for teachers to manually take attendance and providing campus reporting capabilities.",
+    longDescription: "Created and implemented an automated process using Python that allowed teachers to not have to worry about taking attendance during COVID years. The process used data from Microsoft Teams to identify students who were in attendance and marked them present for the appropriate class. Additionally, the automation had reporting built in to allow campuses to identify when students were showing up to class online. This automation was later used after COVID years for Virtual School in the 21-22 school year.",
+    technologies: [
+      { name: "Python", icon: FaPython, color: "text-yellow-400" },
+      { name: "Microsoft Teams API", icon: SiMicrosoftteams, color: "text-purple-500" },
+      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Reporting", icon: FaChartLine, color: "text-blue-600" }
+    ],
+    features: [
+      "Automated attendance marking using Microsoft Teams data",
+      "Eliminated manual attendance taking for teachers during COVID",
+      "Identified students in attendance and marked them present automatically",
+      "Built-in reporting for campuses to track online class attendance",
+      "Extended use for Virtual School in 21-22 school year",
+      "Streamlined remote learning attendance processes"
+    ],
+    category: "automation"
+  },
+  {
+    id: "covid-response-system",
+    title: "COVID-19 Remote Learning Infrastructure",
+    description: "Critical team member in taking the district fully online during COVID in four weeks, implementing automated processes and system scaling for 80,000+ students and 9,000+ staff.",
+    longDescription: "Was a critical member of the team that took the district fully online during COVID in four weeks. Helped architect and implement the complete digital transformation that took IDEA Public Schools fully online during the COVID-19 pandemic. Managed system scaling, user provisioning, and technical support for the largest remote learning deployment in the organization's history.",
+    technologies: [
+      { name: "Python", icon: FaPython, color: "text-yellow-400" },
+      { name: "System Administration", icon: FaServer, color: "text-blue-500" },
+      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Microsoft Teams", icon: SiMicrosoftteams, color: "text-purple-500" }
+    ],
+    features: [
+      "Complete district transition to online learning in 4 weeks",
+      "Infrastructure scaling for 89,000+ users",
+      "Automated attendance processes using Microsoft Teams data",
+      "System performance monitoring and optimization",
+      "Technical support for largest remote learning deployment in organization history",
+      "Successful implementation during critical pandemic response"
     ],
     category: "management"
   },
