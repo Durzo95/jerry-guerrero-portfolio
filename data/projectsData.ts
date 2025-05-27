@@ -124,7 +124,7 @@ const projectsData: Project[] = [
       "Team training and knowledge management",
       "Escalation procedures and quality assurance"
     ],
-    category: "management"
+    category: "management"  
   },
   {
     id: "portfolio-website",
