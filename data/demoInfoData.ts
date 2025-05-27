@@ -5,30 +5,33 @@ import {
   MdLocationPin,
   MdSchool,
   MdPhone,
+  MdWork,
+  MdGroups,
 } from "react-icons/md";
+import { FaGraduationCap, FaUsers } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 // the social media links
 const demoInfoData: Array<{ Icon: IconType; text: string; subText: string }> = [
   {
-    Icon: MdComputer,
-    text: "IDEA Public Schools",
-    subText: "Current Employment",
+    Icon: MdWork,
+    text: "Data Applications Manager",
+    subText: "Current Role",
   },
   {
-    Icon: MdSchool,
-    text: "Computer Science",
+    Icon: MdComputer,
+    text: "IDEA Public Schools",
+    subText: "Organization",
+  },
+  {
+    Icon: FaGraduationCap,
+    text: "Computer Science, UTRGV",
     subText: "Education",
   },
   {
-    Icon: MdPhone,
-    text: "(956) 240-5995",
-    subText: "Phone",
-  },
-  {
-    Icon: MdLocationPin,
-    text: "McAllen, Texas",
-    subText: "Location",
+    Icon: FaUsers,
+    text: "89,000+ Users Supported",
+    subText: "Scale of Operations",
   },
 ];
 
