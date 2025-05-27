@@ -1,15 +1,16 @@
 import { MdDownload } from "react-icons/md";
+import profileData from "../data/profileData";
 
 export default function DownloadCV() {
   return (
     <div className="mt-6">
       <a
-        href="https://drive.google.com/file/d/1pfefcG84JXR-fXKcaQ8kk_1JZq6u_hGK/view?usp=sharing"
-        download={"Gerardo Guerrero Resume.pdf"}
+        href={profileData.contact.resumeUrl}
+        download={`${profileData.personal.fullName} Resume.pdf`}
         target="_blank"
         rel="noopener noreferrer"
         className="w-full"
-        aria-label="Download Gerardo Guerrero's resume as PDF"
+        aria-label={`Download ${profileData.personal.fullName}'s resume as PDF`}
       >
         <button 
           className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg inline-flex items-center justify-center transform transition duration-300 hover:scale-105 border border-blue-500 hover:border-blue-400"
@@ -20,7 +21,7 @@ export default function DownloadCV() {
         </button>
       </a>
       <div id="download-description" className="sr-only">
-        Download Gerardo Guerrero's professional resume in PDF format
+        Download {profileData.personal.fullName}'s professional resume in PDF format
       </div>
     </div>
   );

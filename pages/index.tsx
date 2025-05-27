@@ -3,29 +3,30 @@ import Head from "next/head";
 import Profile from "../components/Profile";
 import MainBody from "../components/MainBody";
 import Navigation from "../components/Navigation";
+import profileData from "../data/profileData";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Gerardo Guerrero - Data Applications Manager & Automation Expert</title>
-        <meta name="description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
+        <title>{profileData.personal.fullName} - {profileData.personal.title}</title>
+        <meta name="description" content={`${profileData.personal.fullName} is a ${profileData.personal.title} at ${profileData.organization.company}, specializing in automation, enterprise systems, and educational technology solutions.`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Gerardo Guerrero" />
+        <meta name="author" content={profileData.personal.fullName} />
         <meta name="keywords" content="Data Applications Manager, Automation, Python, Oracle SQL, Educational Technology, Student Information Systems" />
         <link rel="icon" href="/favicon.ico" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.jerryguerrero.com/" />
-        <meta property="og:title" content="Gerardo Guerrero - Data Applications Manager & Automation Expert" />
-        <meta property="og:description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
+        <meta property="og:title" content={`${profileData.personal.fullName} - ${profileData.personal.title}`} />
+        <meta property="og:description" content={`${profileData.personal.fullName} is a ${profileData.personal.title} at ${profileData.organization.company}, specializing in automation, enterprise systems, and educational technology solutions.`} />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.jerryguerrero.com/" />
-        <meta property="twitter:title" content="Gerardo Guerrero - Data Applications Manager & Automation Expert" />
-        <meta property="twitter:description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
+        <meta property="twitter:title" content={`${profileData.personal.fullName} - ${profileData.personal.title}`} />
+        <meta property="twitter:description" content={`${profileData.personal.fullName} is a ${profileData.personal.title} at ${profileData.organization.company}, specializing in automation, enterprise systems, and educational technology solutions.`} />
       </Head>
       <Navigation />
       <div className="min-h-screen bg-gray-800 pt-16">

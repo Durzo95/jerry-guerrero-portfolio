@@ -2,22 +2,23 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IconType } from "react-icons";
+import profileData from "./profileData";
 
 // the social media links
 const socialMediaData: Array<{ href: string; Icon: IconType; color: string }> =
   [
     {
-      href: "https://www.linkedin.com/in/gerardo-guerrero2/",
+      href: profileData.contact.linkedin,
       Icon: FaLinkedinIn,
       color: "0077b5",
     },
     {
-      href: "https://github.com/Durzo95",
+      href: profileData.contact.github,
       Icon: FaGithub,
       color: "c6ced6",
     },
     {
-      href: "mailto: jerry.guerrero95@gmail.com",
+      href: `mailto: ${profileData.contact.email}`,
       Icon: SiGmail,
       color: "ca473a",
     },

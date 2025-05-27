@@ -1,36 +1,32 @@
-// an object that holds the social media links
+// an object that holds the demographic info data
 import {
   MdComputer,
-  MdEmail,
-  MdLocationPin,
-  MdSchool,
-  MdPhone,
   MdWork,
-  MdGroups,
 } from "react-icons/md";
 import { FaGraduationCap, FaUsers } from "react-icons/fa";
 import { IconType } from "react-icons";
+import profileData from "./profileData";
 
-// the social media links
+// the demographic info data
 const demoInfoData: Array<{ Icon: IconType; text: string; subText: string }> = [
   {
     Icon: MdWork,
-    text: "Data Applications Manager",
+    text: profileData.personal.title,
     subText: "Current Role",
   },
   {
     Icon: MdComputer,
-    text: "IDEA Public Schools",
+    text: profileData.organization.company,
     subText: "Organization",
   },
   {
     Icon: FaGraduationCap,
-    text: "Computer Science, UTRGV",
+    text: profileData.education.fullEducation,
     subText: "Education",
   },
   {
     Icon: FaUsers,
-    text: "89,000+ Users Supported",
+    text: profileData.organization.scale,
     subText: "Scale of Operations",
   },
 ];

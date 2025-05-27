@@ -1,10 +1,6 @@
 // an object that holds the social media links
-import { MdSettings, MdSecurity } from "react-icons/md";
-import { FaCode, FaCogs, FaRocket, FaUsers, FaChartLine } from "react-icons/fa";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import { VscDebugConsole } from "react-icons/vsc";
-import { BsFillPersonFill } from "react-icons/bs";
-import { AiFillCode } from "react-icons/ai";
+import { MdSecurity } from "react-icons/md";
+import { FaRocket, FaUsers, FaChartLine } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 // the social media links

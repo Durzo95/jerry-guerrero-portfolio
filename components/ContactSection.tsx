@@ -2,6 +2,7 @@ import React from "react";
 import MainBodyTitle from "./MainBodyTitle";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import profileData from "../data/profileData";
 
 export default function ContactSection() {
   return (
@@ -23,11 +24,11 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <a 
-                    href="mailto:jerry.guerrero95@gmail.com"
+                    href={`mailto:${profileData.contact.email}`}
                     className="text-white hover:text-blue-400 transition-colors font-medium"
-                    aria-label="Send email to jerry.guerrero95@gmail.com"
+                    aria-label={`Send email to ${profileData.contact.email}`}
                   >
-                    jerry.guerrero95@gmail.com
+                    {profileData.contact.email}
                   </a>
                   <p className="text-gray-500 text-sm">Email</p>
                 </div>
@@ -39,11 +40,11 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <a 
-                    href="tel:+19562405995"
+                    href={`tel:${profileData.contact.phone.replace(/\D/g, '')}`}
                     className="text-white hover:text-green-400 transition-colors font-medium"
-                    aria-label="Call (956) 240-5995"
+                    aria-label={`Call ${profileData.contact.phone}`}
                   >
-                    (956) 240-5995
+                    {profileData.contact.phone}
                   </a>
                   <p className="text-gray-500 text-sm">Phone</p>
                 </div>
@@ -57,22 +58,22 @@ export default function ContactSection() {
 
             <div className="flex gap-4" role="list" aria-label="Professional social media links">
               <a
-                href="https://www.linkedin.com/in/gerardo-guerrero2/"
+                href={profileData.contact.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition-colors"
-                aria-label="Connect with Gerardo Guerrero on LinkedIn"
+                aria-label={`Connect with ${profileData.personal.fullName} on LinkedIn`}
                 role="listitem"
               >
                 <FaLinkedinIn size={20} className="text-white" aria-hidden="true" />
                 <span className="text-white font-medium">LinkedIn</span>
               </a>
               <a
-                href="https://github.com/Durzo95"
+                href={profileData.contact.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition-colors"
-                aria-label="View Gerardo Guerrero's projects on GitHub"
+                aria-label={`View ${profileData.personal.fullName}'s projects on GitHub`}
                 role="listitem"
               >
                 <FaGithub size={20} className="text-white" aria-hidden="true" />

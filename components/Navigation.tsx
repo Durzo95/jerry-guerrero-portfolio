@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import profileData from "../data/profileData";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,9 +73,9 @@ const Navigation = () => {
             <button
               onClick={() => scrollToSection("about")}
               className="text-white text-xl font-bold hover:text-blue-400 transition-colors"
-              aria-label="Go to About section - Gerardo Guerrero"
+              aria-label={`Go to About section - ${profileData.personal.fullName}`}
             >
-              Gerardo Guerrero
+              {profileData.personal.fullName}
             </button>
           </div>
 
