@@ -8,20 +8,26 @@ import whatIDoData from "../data/whatIDoData";
 
 export default function MainBodyWhatIDo() {
   return (
-    <>
+    <div>
       <MainBodyTitle title="What I do" />
-      {/* A Two column grid */}
-      <div className="grid lg:grid-cols-2 grids-cols-1 lg:gap-8 gap-4 px-0 lg:px-4">
-        {whatIDoData.map((data, i) => (
-          <MainBodyAboutCard
-            key={i}
-            Icon={data.Icon}
-            title={data.title}
-            description={data.description}
-            tailwindColor={data.tailwindColor}
-          />
-        ))}
+      <div className="text-gray-400 text-lg">
+        <p className="mt-4 mb-8">
+          Here are the key areas where I focus my expertise and drive impact across the organization.
+        </p>
+        
+        {/* Two column grid matching project section style */}
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+          {whatIDoData.map((data, i) => (
+            <MainBodyAboutCard
+              key={i}
+              Icon={data.Icon}
+              title={data.title}
+              description={data.description}
+              tailwindColor={data.tailwindColor}
+            />
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 }
