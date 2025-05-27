@@ -12,9 +12,9 @@ export default function ProjectFilter({
   const categories = [
     { value: "all", label: "All Categories" },
     { value: "automation", label: "Automation" },
-    { value: "web-development", label: "Web Development" },
     { value: "management", label: "Management" },
     { value: "analytics", label: "Analytics" },
+    { value: "web-development", label: "Web Development" },
   ];
 
   return (
