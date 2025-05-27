@@ -45,10 +45,10 @@ export default function MainBodyWhatIDo() {
             </div>
             <div className="bg-gray-900 rounded-lg p-4">
               <div className="text-2xl font-bold text-green-400">5K+</div>
-              <div className="text-gray-400 text-sm">Tickets Annually</div>
+              <div className="text-gray-400 text-sm">Team Tickets Annually</div>
             </div>
             <div className="bg-gray-900 rounded-lg p-4">
-              <div className="text-2xl font-bold text-red-400">99.5%</div>
+              <div className="text-2xl font-bold text-cyan-400">99.5%</div>
               <div className="text-gray-400 text-sm">On Time SLA</div>
             </div>
             <div className="bg-gray-900 rounded-lg p-4">
