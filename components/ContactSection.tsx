@@ -18,68 +18,70 @@ export default function ContactSection() {
             <h3 className="text-white text-xl font-bold mb-4">Get in Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="bg-gray-800 p-2 rounded-lg">
-                  <MdEmail size={24} className="text-blue-400" />
+                <div className="bg-blue-600 p-3 rounded-lg">
+                  <MdEmail size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-white">jerry.guerrero95@gmail.com</p>
+                  <a 
+                    href="mailto:jerry.guerrero95@gmail.com"
+                    className="text-white hover:text-blue-400 transition-colors font-medium"
+                  >
+                    jerry.guerrero95@gmail.com
+                  </a>
                   <p className="text-gray-500 text-sm">Email</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
-                <div className="bg-gray-800 p-2 rounded-lg">
-                  <MdPhone size={24} className="text-green-400" />
+                <div className="bg-green-600 p-3 rounded-lg">
+                  <MdPhone size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-white">(956) 240-5995</p>
+                  <a 
+                    href="tel:+19562405995"
+                    className="text-white hover:text-green-400 transition-colors font-medium"
+                  >
+                    (956) 240-5995
+                  </a>
                   <p className="text-gray-500 text-sm">Phone</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
-                <div className="bg-gray-800 p-2 rounded-lg">
-                  <MdLocationPin size={24} className="text-red-400" />
+                <div className="bg-red-600 p-3 rounded-lg">
+                  <MdLocationPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-white">McAllen, Texas</p>
+                  <p className="text-white font-medium">McAllen, Texas</p>
                   <p className="text-gray-500 text-sm">Location</p>
                 </div>
               </div>
             </div>
-            
-            {/* Social Links */}
-            <div className="mt-6">
-              <h4 className="text-white font-semibold mb-3">Connect with me</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.linkedin.com/in/gerardo-guerrero2/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 p-3 rounded-lg hover:bg-blue-600 transition-colors"
-                >
-                  <FaLinkedinIn size={24} className="text-white" />
-                </a>
-                <a
-                  href="https://github.com/Durzo95"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 p-3 rounded-lg hover:bg-gray-600 transition-colors"
-                >
-                  <FaGithub size={24} className="text-white" />
-                </a>
-              </div>
-            </div>
           </div>
           
-          {/* Contact Form Placeholder */}
+          {/* Professional Networks */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">Send a Message</h3>
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <p className="text-gray-400 text-center py-8">
-                Contact form coming soon! <br />
-                For now, please reach out via email or LinkedIn.
-              </p>
+            <h3 className="text-white text-xl font-bold mb-4">Connect With Me</h3>
+
+            <div className="flex gap-4">
+              <a
+                href="https://www.linkedin.com/in/gerardo-guerrero2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition-colors"
+              >
+                <FaLinkedinIn size={20} className="text-white" />
+                <span className="text-white font-medium">LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/Durzo95"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition-colors"
+              >
+                <FaGithub size={20} className="text-white" />
+                <span className="text-white font-medium">GitHub</span>
+              </a>
             </div>
           </div>
         </div>
