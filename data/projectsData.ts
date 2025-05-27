@@ -106,6 +106,27 @@ const projectsData: Project[] = [
     category: "automation"
   },
   {
+    id: "attendance-intervention-platform",
+    title: "Attendance Intervention Platform Implementation",
+    description: "Implementation and integration of an attendance notification platform with our SIS to automatically notify parents about student attendance and provide analytics insights for intervention strategies.",
+    longDescription: "Managed the comprehensive implementation of an Attendance Intervention Platform that integrates with our Student Information System to automatically notify parents about their student's attendance patterns. The project required API integration between our SIS and the attendance notification platform, automated account provisioning processes, and the development of analytics capabilities to provide insights for attendance intervention strategies. This system enables proactive communication with families and data-driven decision making for improving student attendance rates.",
+    technologies: [
+      { name: "API Integration", icon: FaServer, color: "text-green-500" },
+      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Python", icon: FaPython, color: "text-yellow-400" },
+      { name: "Analytics Platform", icon: FaChartLine, color: "text-blue-600" }
+    ],
+    features: [
+      "SIS integration with attendance notification platform via API and csv import",
+      "Automated parent notification system for student attendance",
+      "Automated account creation and provisioning for the platform",
+      "Analytics and insights dashboard for attendance intervention strategies",
+      "Real-time attendance data synchronization",
+      "Data-driven attendance intervention capabilities"
+    ],
+    category: "management"
+  },
+  {
     id: "student-distance-validation",
     title: "Student Campus Distance Validation System",
     description: "Python script that reads over 60,000 students' address data and calculates driving distance to their campus, ensuring compliance with Texas Department of Education's 50-mile requirement.",

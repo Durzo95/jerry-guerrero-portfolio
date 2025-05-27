@@ -14,7 +14,7 @@ export default function ProfileSummary() {
           <div className="text-gray-400 text-xs">Students Served</div>
         </div>
         <div className="bg-gray-800 rounded-lg p-3" role="listitem">
-          <div className="text-green-400 text-lg font-bold" aria-label="9,000 plus staff users">9K+</div>
+          <div className="text-green-400 text-lg font-bold" aria-label="9,000 plus staff users">15K+</div>
           <div className="text-gray-400 text-xs">Staff Users</div>
         </div>
         <div className="bg-gray-800 rounded-lg p-3" role="listitem">
