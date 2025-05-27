@@ -5,8 +5,13 @@ interface Props {
 }
 
 export default function MainBodyTitle(prop: Props) {
+  const titleId = `${prop.title.toLowerCase().replace(/\s+/g, '-')}-title`;
+  
   return (
-    <h1 className="text-white mb-4 text-4xl font-bold text-left">
+    <h1 
+      id={titleId}
+      className="text-white mb-4 text-4xl font-bold text-left"
+    >
       {prop.title}
     </h1>
   );

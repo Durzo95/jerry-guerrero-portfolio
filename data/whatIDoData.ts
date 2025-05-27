@@ -1,6 +1,6 @@
 // an object that holds the social media links
-import { MdSettings } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
+import { MdSettings, MdSecurity } from "react-icons/md";
+import { FaCode, FaCogs, FaRocket, FaUsers, FaChartLine } from "react-icons/fa";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { VscDebugConsole } from "react-icons/vsc";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -15,28 +15,28 @@ const whatIDoData: Array<{
   tailwindColor: string;
 }> = [
   {
-    Icon: AiOutlineCloudServer,
-    title: "App Administration",
-    description: "Manage multiple applications and databases",
-    tailwindColor: "text-blue-600",
+    Icon: FaRocket,
+    title: "Enterprise Automation",
+    description: "Automated 15,000+ user accounts and eliminated thousands of hours of manual work across 4 SIS platforms",
+    tailwindColor: "text-blue-500",
   },
   {
-    Icon: AiFillCode,
-    title: "Automations",
-    description: "Solving complex and critical processes with code",
-    tailwindColor: "text-green-600",
+    Icon: FaChartLine,
+    title: "Cost-Saving Solutions",
+    description: "Replaced expensive licensed tools with custom solutions, delivering tens of thousands in annual savings",
+    tailwindColor: "text-green-500",
   },
   {
-    Icon: FaCode,
-    title: "Web Development",
-    description: "Learning new technologies and frameworks",
-    tailwindColor: "text-pink-600",
+    Icon: MdSecurity,
+    title: "Compliance & Risk Management",
+    description: "Safeguard district ratings through automated TEA data syncing and geographic boundary management",
+    tailwindColor: "text-red-500",
   },
   {
-    Icon: BsFillPersonFill,
-    title: "Management",
-    description: "Leading App Administrator and Data Analysts",
-    tailwindColor: "text-indigo-600",
+    Icon: FaUsers,
+    title: "High-Performance Leadership",
+    description: "Lead multi-state operations supporting 89,000+ users with 97%+ satisfaction across 5,000+ annual tickets",
+    tailwindColor: "text-purple-500",
   },
 ];
 

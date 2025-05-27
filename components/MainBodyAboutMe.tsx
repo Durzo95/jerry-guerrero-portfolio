@@ -3,32 +3,34 @@ import MainBodyTitle from "./MainBodyTitle";
 
 export default function MainBodyAboutMe() {
   return (
-    <article>
+    <article aria-labelledby="about-me-title">
       {/* About Me Title */}
       <MainBodyTitle title="About Me" />
-      <div className="text-gray-400 mb-8 text-lg">
+      <div className="text-gray-400 mb-8 text-lg leading-relaxed">
         <p className="mt-4">
-          I am a Computer Science graduate working as the Data Applications
-          Manager for IDEA Public Schools in their Data Services department.
-          Currently managing a team of an Application Admin, Data Analyst, and a
-          Help Desk Clerk to administrate 4 Student Information Systems (SIS) in
-          4 different states with a grand total of over 9,000 school staff users
-          and 80,000 students.
+          I'm Gerardo Guerrero, a Data Applications Manager at IDEA Public Schools and Computer Science 
+          graduate. I lead a high-performing team that manages four enterprise-level Student Information 
+          Systems supporting 80,000+ students and 9,000+ staff across Texas, Florida, and Ohio.
         </p>
         <p className="mt-4">
-          My technical skills involve working with Python, SQL, and JavaScript.
-          With these tools I have solved and automated complex processes for the
-          organization. This includes the imports of student, staff, and geo
-          boundary data.
+          I specialize in building automation pipelines using Python, Oracle SQL, and JavaScript 
+          that deliver measurable impact. My work has eliminated thousands of hours of 
+          manual work, replaced licensed external tools yielding cost savings in the tens 
+          of thousands of dollars, and automatically created user accounts for over 15,000 users in the district. 
+          From automating registration processes to syncing geographic enrollment boundaries 
+          with OpenStreetMap and TEA data, I design solutions that safeguard our district 
+          rating and eliminate compliance risks.
         </p>
         <p className="mt-4">
-          For soft skills, I have experience in managing our team through clear
-          communication of our goals, processes, and training. We have not only
-          been able to meet our goals but exceed them every year.
+          Beyond automation, I drive systems uptime across multiple server arrays, conduct 
+          monthly security audits, manage disaster recovery planning, and lead a help desk 
+          operation that closes over 5,000 tickets annually with 97%+ satisfaction. I was 
+          a critical member of the team that took the district fully online during COVID 
+          in just four weeks.
         </p>
         <p className="mt-4">
-          In my spare time I like to play video games, watch content on Youtube,
-          and read fantasy books.
+          Off the clock, I dive into fantasy novels, build out my home server stack, 
+          and lose time to Monster Hunter.
         </p>
       </div>
     </article>
