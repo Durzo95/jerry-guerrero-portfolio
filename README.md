@@ -36,7 +36,7 @@ The purpose of this site was to solidify the learning of:
 
 ## Screenshot
 
-![Homepage](https://i.imgur.com/0B500Ko.png)
+![Homepage](./public/preview.png)
 
 ## Tech Stack
 
