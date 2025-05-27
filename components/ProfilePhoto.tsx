@@ -5,7 +5,7 @@ export default function ProfilePhoto() {
     <figure className="flex justify-center mb-6">
       <Image
         src="/Headshot.png"
-        alt="Gerardo Guerrero"
+        alt="Professional headshot of Gerardo Guerrero, Data Applications Manager"
         width={200}
         height={200}
         className="bg-blue-800 rounded-2xl shadow-2xl"

@@ -8,29 +8,59 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Gerardo Guerrero</title>
+        <title>Gerardo Guerrero - Data Applications Manager & Automation Expert</title>
+        <meta name="description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Gerardo Guerrero" />
+        <meta name="keywords" content="Data Applications Manager, Automation, Python, Oracle SQL, Educational Technology, Student Information Systems" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.jerryguerrero.com/" />
+        <meta property="og:title" content="Gerardo Guerrero - Data Applications Manager & Automation Expert" />
+        <meta property="og:description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.jerryguerrero.com/" />
+        <meta property="twitter:title" content="Gerardo Guerrero - Data Applications Manager & Automation Expert" />
+        <meta property="twitter:description" content="Gerardo Guerrero is a Data Applications Manager at IDEA Public Schools, specializing in automation, enterprise systems, and educational technology solutions." />
       </Head>
       <Navigation />
-      <main className="min-h-screen bg-gray-800 pt-16">
+      <div className="min-h-screen bg-gray-800 pt-16">
+        {/* Skip to main content link for screen readers */}
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50"
+        >
+          Skip to main content
+        </a>
+        
         {/* Hero Section with Profile */}
         <section className="lg:flex lg:justify-center py-4 px-4 lg:py-8 lg:px-10">
           <div className="max-w-7xl w-full">
             <div className="grid grid-cols-12 gap-4 lg:gap-8">
               {/* Left side - Profile (Sticky on desktop) */}
-              <div className="col-span-12 lg:col-span-4 xl:col-span-4">
+              <aside 
+                className="col-span-12 lg:col-span-4 xl:col-span-4"
+                aria-label="Professional profile and contact information"
+              >
                 <div className="lg:sticky lg:top-24">
                   <Profile />
                 </div>
-              </div>
+              </aside>
               {/* Right side - Main Content */}
-              <div className="col-span-12 lg:col-span-8 xl:col-span-8">
+              <div 
+                id="main-content"
+                className="col-span-12 lg:col-span-8 xl:col-span-8"
+              >
                 <MainBody />
               </div>
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 };

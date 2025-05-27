@@ -3,7 +3,7 @@ import MainBodyTitle from "./MainBodyTitle";
 
 export default function MainBodyAboutMe() {
   return (
-    <article>
+    <article aria-labelledby="about-me-title">
       {/* About Me Title */}
       <MainBodyTitle title="About Me" />
       <div className="text-gray-400 mb-8 text-lg leading-relaxed">
