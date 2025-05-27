@@ -1,5 +1,5 @@
 import React from "react";
-import { FaJs, FaDatabase, FaGraduationCap } from "react-icons/fa";
+import { FaJs, FaGraduationCap } from "react-icons/fa";
 import { SiPowerbi, SiMicrosoftexcel, SiPython, SiOracle } from "react-icons/si";
 
 export default function ProfileSkills() {

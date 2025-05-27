@@ -1,6 +1,5 @@
 import React from "react";
 import { IconType } from "react-icons";
-import { MdSettings } from "react-icons/md";
 
 interface Props {
   Icon: IconType;

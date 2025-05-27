@@ -1,9 +1,5 @@
 import MainBodyTitle from "./MainBodyTitle";
 import MainBodyAboutCard from "./MainBodyAboutCard";
-import { MdSettings } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import { VscDebugConsole } from "react-icons/vsc";
 import whatIDoData from "../data/whatIDoData";
 
 export default function MainBodyWhatIDo() {

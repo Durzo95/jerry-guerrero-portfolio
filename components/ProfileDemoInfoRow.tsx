@@ -1,5 +1,4 @@
 import React from "react";
-import demoInfoData from "../data/demoInfoData";
 import { IconType } from "react-icons";
 
 interface Props {

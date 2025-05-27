@@ -1,6 +1,6 @@
 import React from "react";
 import MainBodyTitle from "./MainBodyTitle";
-import { MdEmail, MdPhone, MdLocationPin } from "react-icons/md";
+import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function ContactSection() {

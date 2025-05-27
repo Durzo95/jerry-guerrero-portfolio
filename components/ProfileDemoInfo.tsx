@@ -1,5 +1,4 @@
 import React from "react";
-import { IoSchool } from "react-icons/io5";
 import demoInfoData from "../data/demoInfoData";
 import ProfileDemoInfoRow from "./ProfileDemoInfoRow";
 
