@@ -76,7 +76,7 @@ const projectsData: Project[] = [
     features: [
       "Identifies alternative schools for students based on residence",
       "Retrieves Campus ID and Residence Code for TEA data submissions",
-      "Replaced licensed external tool saving tens of thousands of dollars",
+      "Replaced licensed external tool, saving thousands of dollars",
       "Applied to both existing and incoming students in SIS applications",
       "Ensures all students fall within attendance boundaries",
       "Safeguards district rating with TEA, eliminating boundary non-compliance risks",
@@ -190,6 +190,26 @@ const projectsData: Project[] = [
     category: "automation"
   },
   {
+    id: "covid-attendance-dashboard",
+    title: "COVID-19 Onsite vs Online Attendance Dashboard",
+    description: "Critical analytics dashboard tracking student attendance patterns during COVID-19 pandemic, comparing onsite vs online learning effectiveness across 80,000+ students for district leadership decision-making.",
+    longDescription: "Created the Onsite vs Online Attendance Dashboard during the COVID-19 pandemic to track and analyze student attendance patterns across onsite and online learning modalities. The dashboard provided district leadership with real-time insights into attendance trends, engagement patterns, and learning effectiveness to inform critical decisions about school reopening strategies and hybrid learning models.",
+    technologies: [
+      { name: "Power BI", icon: SiPowerbi, color: "text-yellow-500" },
+      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Excel", icon: SiMicrosoftexcel, color: "text-green-600" },
+      { name: "Data Analytics", icon: FaChartLine, color: "text-blue-600" }
+    ],
+    features: [
+      "Real-time attendance tracking for 80,000+ students across onsite and online modalities",
+      "Comparative analysis dashboards showing attendance patterns by learning mode",
+      "District leadership insights for critical decision-making",
+      "Support for school reopening strategies and hybrid learning models",
+      "Interactive visualizations for executive presentations"
+    ],
+    category: "analytics"
+  },
+  {
     id: "portfolio-website",
     title: "Personal Portfolio Website",
     description: "Responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS featuring smooth animations and comprehensive accessibility features.",
@@ -206,7 +226,6 @@ const projectsData: Project[] = [
       "Smooth scrolling navigation with active section detection",
       "Comprehensive accessibility features with proper ARIA labels",
       "Modern UI components and animations",
-      "SEO optimized with proper meta tags",
       "Professional showcase of technical skills and projects"
     ],
     githubUrl: "https://github.com/Durzo95/jerry-guerrero-portfolio",
