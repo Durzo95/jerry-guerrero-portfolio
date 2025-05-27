@@ -4,21 +4,17 @@ import {
   FaJs, 
   FaReact, 
   FaDatabase, 
-  FaGithub, 
-  FaExternalLinkAlt,
   FaServer,
   FaChartLine,
-  FaMapMarkedAlt 
+  FaMapMarkedAlt,
+  FaFileAlt 
 } from "react-icons/fa";
 import { 
   SiTypescript, 
   SiNextdotjs, 
   SiTailwindcss, 
-  SiPostgresql, 
-  SiMysql,
   SiPowerbi,
   SiMicrosoftexcel,
-  SiPowershell,
   SiOracle,
   SiMicrosoftteams
 } from "react-icons/si";
@@ -209,6 +205,29 @@ const projectsData: Project[] = [
       "Streamlined student withdrawal procedures"
     ],
     category: "automation"
+  },
+  {
+    id: "powerschool-ui-update-project",
+    title: "PowerSchool SIS UI Update Implementation",
+    description: "Led comprehensive communication and project management for PowerSchool SIS UI update, coordinating change management for 15,000+ users across multiple internal communication channels.",
+    longDescription: "Managed the complete implementation and communication strategy for a major PowerSchool SIS user interface update affecting 15,000+ users across the organization. Led cross-functional teams to ensure smooth transition, created comprehensive documentation and training materials, established SharePoint sites for resource management, and coordinated multi-channel communication campaigns to prepare users for the significant system changes. The project required extensive stakeholder management, user training coordination, and change management strategies to minimize disruption to daily operations.",
+    technologies: [
+      { name: "SharePoint", icon: FaServer, color: "text-blue-500" },
+      { name: "PowerSchool SIS", icon: FaDatabase, color: "text-green-600" },
+      { name: "Project Management", icon: FaChartLine, color: "text-purple-500" },
+      { name: "Documentation", icon: FaFileAlt, color: "text-orange-500" }
+    ],
+    features: [
+      "Comprehensive communication strategy for 15,000+ users",
+      "Multi-channel internal communication campaigns",
+      "Created extensive documentation and training materials",
+      "Established SharePoint sites for resource management",
+      "Cross-functional team coordination and stakeholder management",
+      "Change management strategies to minimize operational disruption",
+      "User training coordination and support during transition",
+      "Successful implementation of major SIS UI overhaul"
+    ],
+    category: "management"
   },
   {
     id: "covid-attendance-dashboard",
