@@ -47,15 +47,7 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              <div className="flex items-center gap-3">
-                <div className="bg-red-600 p-3 rounded-lg">
-                  <MdLocationPin size={20} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">McAllen, Texas</p>
-                  <p className="text-gray-500 text-sm">Location</p>
-                </div>
-              </div>
+              
             </div>
           </div>
           
