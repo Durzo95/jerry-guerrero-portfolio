@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Project } from "../data/projectsData";
 import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { uiText } from "../data/uiText";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,29 +11,29 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <article 
+    <article
       className="rounded-lg bg-gray-800 p-6 hover:bg-gray-750 transition-colors duration-300 border border-gray-700 hover:border-gray-600"
       aria-labelledby={`project-title-${project.id}`}
     >
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         <div className="flex-1">
-          <h3 
+          <h3
             id={`project-title-${project.id}`}
             className="text-white text-xl font-bold mb-2"
           >
             {project.title}
           </h3>
           <div className="flex items-center gap-2 mb-3">
-            <span 
+            <span
               className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs capitalize"
-              aria-label={`Project category: ${project.category.replace("-", " ")}`}
+              aria-label={uiText.projectCard.categoryLabel.replace("%s", project.category.replace("-", " "))}
             >
               {project.category.replace("-", " ")}
             </span>
           </div>
         </div>
-        
+
         {/* Action Buttons */}
         <div className="flex gap-2 ml-4" role="group" aria-label="Project links">
           {project.githubUrl && (
@@ -41,7 +42,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
-              aria-label={`View ${project.title} source code on GitHub`}
+              aria-label={uiText.projectCard.viewSource.replace("%s", project.title)}
             >
               <FaGithub size={16} className="text-white" aria-hidden="true" />
             </a>
@@ -52,7 +53,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-500 p-2 rounded-lg transition-colors"
-              aria-label={`View ${project.title} live website`}
+              aria-label={uiText.projectCard.viewLive.replace("%s", project.title)}
             >
               <FaExternalLinkAlt size={16} className="text-white" aria-hidden="true" />
             </a>
@@ -67,11 +68,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Technologies */}
       <div className="mb-4">
-        <h4 className="text-white font-semibold mb-2 text-sm">Technologies Used</h4>
-        <div 
+        <h4 className="text-white font-semibold mb-2 text-sm">{uiText.projectCard.technologiesLabel.replace(" in this project", "")}</h4>
+        <div
           className="flex flex-wrap gap-2"
           role="list"
-          aria-label="Technologies used in this project"
+          aria-label={uiText.projectCard.technologiesLabel}
         >
           {project.technologies.map((tech, index) => (
             <div
@@ -91,7 +92,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {isExpanded && (
         <div className="mb-4">
           <h4 className="text-white font-semibold mb-2 text-sm">Key Features</h4>
-          <ul className="space-y-1" aria-label="Project features">
+          <ul className="space-y-1" aria-label={uiText.projectCard.featuresLabel}>
             {project.features.map((feature, index) => (
               <li key={index} className="text-gray-400 text-sm flex items-start">
                 <span className="text-blue-400 mr-2 mt-1" aria-hidden="true">•</span>
@@ -108,16 +109,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
         aria-expanded={isExpanded}
         aria-controls={`project-details-${project.id}`}
-        aria-label={isExpanded ? `Hide additional details for ${project.title}` : `Show additional details for ${project.title}`}
+        aria-label={isExpanded ? uiText.projectCard.hideDetailsAria.replace("%s", project.title) : uiText.projectCard.showDetailsAria.replace("%s", project.title)}
       >
         {isExpanded ? (
           <>
-            <span>Show Less</span>
+            <span>{uiText.projectCard.showLess}</span>
             <FaChevronUp size={12} aria-hidden="true" />
           </>
         ) : (
           <>
-            <span>Show More</span>
+            <span>{uiText.projectCard.showMore}</span>
             <FaChevronDown size={12} aria-hidden="true" />
           </>
         )}

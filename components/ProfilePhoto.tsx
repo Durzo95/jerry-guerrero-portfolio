@@ -10,7 +10,7 @@ export default function ProfilePhoto() {
         height={200}
         className="bg-blue-800 rounded-2xl shadow-2xl"
         placeholder="blur"
-        blurDataURL="/Headshot.png"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPj/HwADBwL+hD3DxgAAAABJRU5ErkJggg=="
       />
     </figure>
   );
