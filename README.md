@@ -76,6 +76,23 @@ Leading enterprise-scale educational technology operations across Texas, Florida
 
 ## Run Locally
 
+Use Node.js 24.x (matching the Vercel runtime). With nvm, run `nvm use`
+before installing dependencies with `npm ci`. Run `npm run typecheck` and
+`npm run build` to validate changes.
+
+The scoped Next.js PostCSS override uses the patched PostCSS 8.x version
+already declared by this project, replacing Next.js 15's pinned 8.4.31.
+Keep it until Next.js 15 adopts a secure PostCSS version upstream. Do not
+remove it solely because the root PostCSS dependency is up to date.
+
+Tailwind CSS 4 uses `@tailwindcss/postcss` (imports and vendor prefixes are
+handled automatically). `styles/globals.css` loads the existing JavaScript
+configuration with `@config` and explicitly scans pages, components, and data
+files with `@source`; data-file color classes replace the old broad safelist.
+Compatibility utilities and the existing v3 palette retain the site's appearance.
+Tailwind 4 requires modern browsers: Safari 16.4+, Chrome 111+, and Firefox 128+.
+See the [official upgrade guide](https://tailwindcss.com/docs/upgrade-guide).
+
 Clone the repo
 
 ```bash

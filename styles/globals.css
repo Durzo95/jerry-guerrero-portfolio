@@ -1,6 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@config "../tailwind.config.js";
+/* Data files contain complete icon color utilities, replacing v3's broad safelist. */
+@source "../pages";
+@source "../components";
+@source "../data";
+
+/* Preserve the existing deprecated utility names without changing components. */
+@utility flex-shrink-0 { flex-shrink: 0; }
+@utility flex-grow { flex-grow: 1; }
+@utility shadow-inner { box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); }
+
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: theme("colors.gray.200");
+  }
+  button, [role="button"] { cursor: pointer; }
+}
+
+/* Keep v3 hover behavior, including touch devices that emulate hover. */
+@custom-variant hover (&:hover);
 
 /*  Makes the whole background html the right color, instead of only the scrollable area
     Without this if the user scrolls past on mobile they would see white instead of the 
