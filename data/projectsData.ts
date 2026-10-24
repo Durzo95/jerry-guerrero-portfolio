@@ -13,12 +13,11 @@ import {
 import { 
   SiTypescript, 
   SiNextdotjs, 
-  SiTailwindcss, 
-  SiPowerbi,
-  SiMicrosoftexcel,
-  SiOracle,
-  SiMicrosoftteams
+  SiTailwindcss
 } from "react-icons/si";
+// react-icons v5 dropped the Power BI, Excel, Oracle and Teams brand icons from Simple Icons
+import { PiChartBarFill, PiMicrosoftExcelLogoFill, PiMicrosoftTeamsLogoFill } from "react-icons/pi";
+import { GrOracle } from "react-icons/gr";
 import { MdVpnKey } from "react-icons/md";
 
 export interface Project {
@@ -44,7 +43,7 @@ const projectsData: Project[] = [
     description: "Designed, created, and implemented an automation that created, updated, and deactivated user accounts for over 15,000 users in our SIS platform, reducing yearly account problem tickets from thousands to a few hundred.",
     technologies: [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "SIS APIs", icon: FaServer, color: "text-green-500" },
       { name: "Data Sync", icon: FaDatabase, color: "text-blue-600" }
     ],
@@ -66,7 +65,7 @@ const projectsData: Project[] = [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
       { name: "OpenStreetMaps API", icon: FaMapMarkedAlt, color: "text-green-500" },
       { name: "TEA APIs", icon: FaServer, color: "text-orange-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" }
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" }
     ],
     features: [
       "Identifies alternative schools for students based on residence",
@@ -85,7 +84,7 @@ const projectsData: Project[] = [
     description: "Automated synchronization system that brings students from our registration platform directly to our SIS platforms, eliminating manual data transfer and ensuring seamless student enrollment processes.",
     technologies: [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "Registration APIs", icon: FaServer, color: "text-green-500" },
       { name: "SIS Integration", icon: FaDatabase, color: "text-blue-600" }
     ],
@@ -105,7 +104,7 @@ const projectsData: Project[] = [
     description: "Implementation and integration of an attendance notification platform with our SIS to automatically notify parents about student attendance and provide analytics insights for intervention strategies.",
     technologies: [
       { name: "API Integration", icon: FaServer, color: "text-green-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
       { name: "Analytics Platform", icon: FaChartLine, color: "text-blue-600" }
     ],
@@ -126,7 +125,7 @@ const projectsData: Project[] = [
     technologies: [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
       { name: "Mapping APIs", icon: FaMapMarkedAlt, color: "text-green-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "Distance Calculation", icon: FaChartLine, color: "text-blue-600" }
     ],
     features: [
@@ -145,7 +144,7 @@ const projectsData: Project[] = [
     description: "Automated processes for Family Engagement and auto-generating withdrawal packets to eliminate manual steps and improve operational efficiency.",
     technologies: [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "Document Generation", icon: FaServer, color: "text-green-500" },
       { name: "Process Automation", icon: FaDatabase, color: "text-blue-600" }
     ],
@@ -209,8 +208,8 @@ const projectsData: Project[] = [
     description: "Python automation using Microsoft Teams data to automatically mark student attendance during COVID, eliminating the need for teachers to manually take attendance and providing campus reporting capabilities.",
     technologies: [
       { name: "Python", icon: FaPython, color: "text-yellow-400" },
-      { name: "Microsoft Teams API", icon: SiMicrosoftteams, color: "text-purple-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
+      { name: "Microsoft Teams API", icon: PiMicrosoftTeamsLogoFill, color: "text-purple-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
       { name: "Reporting", icon: FaChartLine, color: "text-blue-600" }
     ],
     features: [
@@ -228,9 +227,9 @@ const projectsData: Project[] = [
     title: "COVID-19 Onsite vs Online Attendance Dashboard",
     description: "Critical analytics dashboard tracking student attendance patterns during COVID-19 pandemic, comparing onsite vs online learning effectiveness across 80,000+ students for district leadership decision-making.",
     technologies: [
-      { name: "Power BI", icon: SiPowerbi, color: "text-yellow-500" },
-      { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
-      { name: "Excel", icon: SiMicrosoftexcel, color: "text-green-600" },
+      { name: "Power BI", icon: PiChartBarFill, color: "text-yellow-500" },
+      { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
+      { name: "Excel", icon: PiMicrosoftExcelLogoFill, color: "text-green-600" },
       { name: "Data Analytics", icon: FaChartLine, color: "text-blue-600" }
     ],
     features: [

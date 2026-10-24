@@ -1,13 +1,16 @@
 import React from "react";
 import { FaJs, FaGraduationCap } from "react-icons/fa";
-import { SiPowerbi, SiMicrosoftexcel, SiPython, SiOracle } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+// react-icons v5 dropped the Power BI, Excel and Oracle brand icons from Simple Icons
+import { PiChartBarFill, PiMicrosoftExcelLogoFill } from "react-icons/pi";
+import { GrOracle } from "react-icons/gr";
 
 export default function ProfileSkills() {
       const skills = [
       { name: "Python", icon: SiPython, color: "text-yellow-400" },
-    { name: "Oracle SQL", icon: SiOracle, color: "text-red-500" },
-    { name: "Power BI", icon: SiPowerbi, color: "text-yellow-500" },
-    { name: "Excel", icon: SiMicrosoftexcel, color: "text-green-600" },
+    { name: "Oracle SQL", icon: GrOracle, color: "text-red-500" },
+    { name: "Power BI", icon: PiChartBarFill, color: "text-yellow-500" },
+    { name: "Excel", icon: PiMicrosoftExcelLogoFill, color: "text-green-600" },
     { name: "JavaScript", icon: FaJs, color: "text-yellow-300" },
     { name: "SIS Admin", icon: FaGraduationCap, color: "text-purple-400" },
   ];
